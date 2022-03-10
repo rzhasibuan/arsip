@@ -17,7 +17,12 @@ Route::get('/', function () {
     return redirect('login');
 });
 
+
 Auth::routes();
+
+Route::get('/register', function() {
+    return redirect('/login');
+});
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/covid19','CertaintyFactorController@proses');

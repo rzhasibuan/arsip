@@ -4,13 +4,12 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <img src="{{ asset('assets/svg/login.svg') }}" alt="" width="100%" class="mt-5 mb-2">
+                <img src="{{ asset('assets/arsip/undraw_message_sent_re_q2kl.svg') }}" alt="" width="100%" class="mt-5 mb-2">
 
             </div>
             <div class="col-md-6">
                 <div class="mt-4 p-1">
-                    {{-- <div class="card-header text-white" style="background-color: #F9A826">{{ __('Login') }}</div> --}}
-                    <p class="h2 text-monospace text-center" style="color: #6C63FF">Sign in</p>
+                    <p class="h2 text-monospace text-center" style="color: #00B0FF">Sign in</p>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('login') }}">
@@ -58,7 +57,7 @@
 
                             <div class="form-group row mb-0">
                                 <div class="col-md-8 offset-md-4">
-                                    <button type="submit" class="btn " style="background-color: #6C63FF; color:white" >
+                                    <button type="submit" class="btn " style="background-color: #00B0FF; color:white" >
                                         {{ __('Login') }}
                                     </button>
 
