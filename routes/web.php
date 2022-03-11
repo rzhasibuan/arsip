@@ -25,7 +25,6 @@ Route::get('/register', function() {
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/covid19','CertaintyFactorController@proses');
 
 Route::name('admin.') //pemberian nama seperti admin.user.index
 ->prefix('admin')
@@ -35,9 +34,5 @@ Route::name('admin.') //pemberian nama seperti admin.user.index
     Route::resource('user','UserController');
     Route::resource('role','RoleController');
     Route::resource('permission','PermissionController');
-    Route::resource('gejala','GejalaController');
-    Route::resource('pasien','PasienController');
+    Route::resource('arsip','ArsipController');
 });
-
-Route::get('/diagnosa','DiagnosaController@index')->name('diagnosa.index');
-Route::post('/diagnosa','DiagnosaController@store')->name('diagnosa.store');

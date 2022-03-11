@@ -8,14 +8,14 @@
                 <!-- small box -->
                 <div class="small-box bg-aqua">
                     <div class="inner">
-                        {{-- <h3>{{$pasien}}</h3> --}}
+                        <h3>{{$suratMasuk}}</h3>
 
                         <p>Surat Masuk</p>
                     </div>
                     <div class="icon">
                         <ion-icon name="mail-unread-outline"></ion-icon>
                     </div>
-                    <a href="{{route('admin.pasien.index')}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="{{route('admin.arsip.index')}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -23,14 +23,14 @@
                 <!-- small box -->
                 <div class="small-box bg-green">
                     <div class="inner">
-                        {{-- <h3>{{$gejala}}</h3> --}}
+                        <h3>{{$suratKeluar}}</h3>
 
                         <p>Surat Keluar</p>
                     </div>
                     <div class="icon">
                         <ion-icon name="mail-outline"></ion-icon>
                     </div>
-                    <a href="{{route('admin.gejala.index')}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="{{route('admin.arsip.index')}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->

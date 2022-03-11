@@ -16,7 +16,7 @@
             @endrole
 
             @role('superadmin','admin')
-            {{--manajement akses--}}
+            {{--msanajement akses--}}
             <li class="{{$subUser   ?? ""}} {{$subRole   ?? ""}} {{$subPermission   ?? ""}}  treeview">
                 <a href=""><i class="fa fa-users"></i> <span>Access Management</span>
                     <span class="pull-right-container">
@@ -37,31 +37,17 @@
                 </ul>
             </li>
             {{--module--}}
-            <li class="{{$subGejala   ?? ""}} treeview">
-                <a href=""><i class="fa fa-database"></i> <span>Module</span>
+            <li class="{{$subArsip   ?? ""}} treeview">
+                <a href=""><i class="fa fa-database"></i> <span>Module Arsip</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="nav-item {{$subGejala   ?? ""}}">
-                        <a href="{{route('admin.gejala.index')}}" class="nav-link"><i class="fa fa-gg"></i><span>Symptom/Gejala</span></a>
-                    </li>
-                </ul>
-            </li>
-            {{--pemeriksaaan--}}
-            <li class=" {{$subPasien   ?? ""}} {{$subDiagnosa   ?? ""}} treeview">
-                <a href=""><i class="fa fa-medkit"></i> <span>Inspection</span>
-                    <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                </a>
-                <ul class="treeview-menu">
-                    <li class="nav-item {{$subPasien   ?? ""}}">
-                        <a href="{{route('admin.pasien.index')}}" class="nav-link"><i class="fa fa-user-md"></i><span>Patient / Peserta</span></a>
-                    </li>
-                    <li class="nav-item {{$subDiagnosa   ?? ""}}">
-                        <a href="" class="nav-link"><i class="fa fa-arrow-right"></i><span>Diagnosa</span></a>
+                    <li class="nav-item {{$subArsip   ?? ""}}">
+                        <a href="{{route('admin.arsip.index')}}" class="nav-link">
+                            <ion-icon name="mail-open-outline"></ion-icon>
+                        <span>Arsip Surat</span></a>
                     </li>
                 </ul>
             </li>
@@ -74,8 +60,10 @@
                 </a>
                 <ul class="treeview-menu">
                     <li class="nav-item {{$subFakultas   ?? ""}}">
-                        <a href="" class="nav-link"><i class="fa fa-dashboard"></i><span>Gejala</span></a>
-                        <a href="" class="nav-link"><i class="fa fa-dashboard"></i><span>User</span></a>
+                        <a href="" class="nav-link"><i class="fa fa-dashboard"></i><span>Report Surat masuk</span></a>
+                    </li>
+                    <li class="nav-item {{$subFakultas   ?? ""}}">
+                        <a href="" class="nav-link"><i class="fa fa-dashboard"></i><span>Report Surat Keluar</span></a>
                     </li>
                 </ul>
             </li>
