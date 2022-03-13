@@ -7,54 +7,6 @@
     "content-hash": "7ef5fc45210deb7e8e7d642ac77bcfc6",
     "packages": [
         {
-            "name": "afrizalmy/certainty_factor",
-            "version": "v1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/afrizal423/afrizalm-certainty-factor.git",
-                "reference": "45ca203d850906e0055e371685b3ed9e69b41621"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/afrizal423/afrizalm-certainty-factor/zipball/45ca203d850906e0055e371685b3ed9e69b41621",
-                "reference": "45ca203d850906e0055e371685b3ed9e69b41621",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "afrizalmy\\CertaintyFactor\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "afrizal423",
-                    "email": "afrizal2499@gmail.com",
-                    "homepage": "https://afrizalmy.com/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Package sederhana untuk menghitung Sistem Pakar menggunakan metode Certainty Factor",
-            "homepage": "https://github.com/afrizal423/afrizalm-certainty-factor",
-            "keywords": [
-                "certainty factor",
-                "pakar",
-                "sistem pakar"
-            ],
-            "support": {
-                "issues": "https://github.com/afrizal423/afrizalm-certainty-factor/issues",
-                "source": "https://github.com/afrizal423/afrizalm-certainty-factor/tree/v1.0.2"
-            },
-            "time": "2021-02-21T03:49:05+00:00"
-        },
-        {
             "name": "asm89/stack-cors",
             "version": "v2.0.3",
             "source": {

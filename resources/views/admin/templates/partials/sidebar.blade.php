@@ -45,9 +45,15 @@
                 </a>
                 <ul class="treeview-menu">
                     <li class="nav-item {{$subArsip   ?? ""}}">
-                        <a href="{{route('admin.arsip.index')}}" class="nav-link">
+                        <a href="{{route('admin.surat_masuk.index')}}" class="nav-link">
                             <ion-icon name="mail-open-outline"></ion-icon>
-                        <span>Arsip Surat</span></a>
+                        <span>Arsip Surat Masuk</span></a>
+                    </li>
+
+                    <li class="nav-item {{$subArsip   ?? ""}}">
+                        <a href="{{route('admin.surat_keluar.index')}}" class="nav-link">
+                            <ion-icon name="mail-open-outline"></ion-icon>
+                            <span>Arsip Surat Keluar</span></a>
                     </li>
                 </ul>
             </li>

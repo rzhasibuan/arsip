@@ -10,12 +10,12 @@
                     <div class="inner">
                         <h3>{{$suratMasuk}}</h3>
 
-                        <p>Surat Masuk</p>
+                        <p>Arsip Surat Masuk</p>
                     </div>
                     <div class="icon">
                         <ion-icon name="mail-unread-outline"></ion-icon>
                     </div>
-                    <a href="{{route('admin.arsip.index')}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="{{route('admin.surat_masuk.index')}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -25,12 +25,12 @@
                     <div class="inner">
                         <h3>{{$suratKeluar}}</h3>
 
-                        <p>Surat Keluar</p>
+                        <p>Arsip Surat Keluar</p>
                     </div>
                     <div class="icon">
                         <ion-icon name="mail-outline"></ion-icon>
                     </div>
-                    <a href="{{route('admin.arsip.index')}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="{{route('admin.surat_keluar.index')}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->

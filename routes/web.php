@@ -34,5 +34,6 @@ Route::name('admin.') //pemberian nama seperti admin.user.index
     Route::resource('user','UserController');
     Route::resource('role','RoleController');
     Route::resource('permission','PermissionController');
-    Route::resource('arsip','ArsipController');
+    Route::resource('surat_masuk', 'SuratMasukController');
+    Route::resource('surat_keluar' , ' SuratKeluarController');
 });
