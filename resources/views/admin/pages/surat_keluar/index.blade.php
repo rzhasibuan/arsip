@@ -8,8 +8,8 @@
 @section('content')
     <div class="box table-responsive no-padding">
         <div class="box-body">
-            <a href="{{route('admin.gejala.create')}}" class="btn btn-primary btn-sm" style="margin-bottom: 10px">
-                <i class="fa fa-pencil-square-o"></i> Add Symptom / Gejala</button>
+            <a href="{{route('admin.surat_keluar.create')}}" class="btn btn-primary btn-sm" style="margin-bottom: 10px">
+                <i class="fa fa-pencil-square-o"></i> Arsip Surat Keluar</button>
             </a>
 
             @if (session('message'))
@@ -17,14 +17,14 @@
             @endif
 
 
-            <table id="gejala1" class="table table-bordered table-striped">
+            <table id="arsip_surat1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                    <th>NO</th>
-                    <th>KODE</th>
-                    <th>SYMPTOM / GEJALA</th>
-                    <th>VALUE / BOBOT</th>
-                    <th>ACTION</th>
+                    <th>No</th>
+                    <th>Nomer Surat</th>
+                    <th>Penerima</th>
+                    <th>View & Share</th>
+                    <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -34,22 +34,19 @@
                 @foreach($data as $dt)
                     <tr>
                         <td>{{$i++}}</td>
-                        <td>{{$dt->kode_rule }}</td>
-                        <td>{{ $dt->nama_rule }}</td>
-                        <td>{{ $dt->nilai_md }}</td>
+                        <td>{{ $dt->nomer_surat }}</td>
+                        <td>{{ $dt->penerima }}</td>
                         <td>
-                            <a href="{{ route('admin.gejala.edit',[$dt->id]) }}" class="btn btn-primary btn-sm" style="margin-bottom: 10px;"><i class="fa fa-edit"></i></a>
-
-                            <form action="{{route('admin.gejala.destroy',[$dt->id])}}" class="d-inline" onsubmit="return confirm('Apakah anda ingin menghapus ini secara permanen ?')" method="POST">
+                            <a href="{{url('storage/'. $dt->file)}}" class="btn btn-app"><ion-icon name="arrow-down-circle-outline" title="view and download file"></ion-icon></a>
+                        </td>
+                        <td>
+                            <form action="{{route('admin.surat_keluar.destroy',[$dt->id])}}" class="d-inline" onsubmit="return confirm('Apakah anda ingin menghapus ini secara permanen ?')" method="POST">
                                 @csrf
                                 <input type="hidden" name="_method" value="DELETE">
-                                <button type="submit" class="btn btn-danger btn-sm">
+                                <button type="submit" class="btn btn-danger btn-app">
                                     <i class="fa fa-trash"></i>
                                 </button>
                             </form>
-
-
-
                         </td>
                     </tr>
                 @endforeach
@@ -67,8 +64,8 @@
     <script src="{{asset('assets/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js')}}"></script>
     <script>
         $(function () {
-            $('#gejala1').DataTable()
-            $('#gejala2').DataTable({
+            $('#arsip_surat1').DataTable()
+            $('#arsip_surat2').DataTable({
                 'paging'      : true,
                 'lengthChange': false,
                 'searching'   : false,
