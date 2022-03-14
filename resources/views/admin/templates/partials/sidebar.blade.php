@@ -37,20 +37,20 @@
                 </ul>
             </li>
             {{--module--}}
-            <li class="{{$subArsip   ?? ""}} treeview">
+            <li class="{{$subSuratMasuk   ?? ""}} {{$subSuratKeluar   ?? ""}} treeview">
                 <a href=""><i class="fa fa-database"></i> <span>Module Arsip</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="nav-item {{$subArsip   ?? ""}}">
+                    <li class="nav-item {{$subSuratMasuk   ?? ""}}">
                         <a href="{{route('admin.surat_masuk.index')}}" class="nav-link">
                             <ion-icon name="mail-open-outline"></ion-icon>
                         <span>Arsip Surat Masuk</span></a>
                     </li>
 
-                    <li class="nav-item {{$subArsip   ?? ""}}">
+                    <li class="nav-item {{$subSuratKeluar   ?? ""}}">
                         <a href="{{route('admin.surat_keluar.index')}}" class="nav-link">
                             <ion-icon name="mail-open-outline"></ion-icon>
                             <span>Arsip Surat Keluar</span></a>

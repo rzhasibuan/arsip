@@ -37,3 +37,5 @@ Route::name('admin.') //pemberian nama seperti admin.user.index
     Route::resource('surat_masuk', 'SuratMasukController');
     Route::resource('surat_keluar' , ' SuratKeluarController');
 });
+
+Route::get('/testauth','TestController@cekAuth');

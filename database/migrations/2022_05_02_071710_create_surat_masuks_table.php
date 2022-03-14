@@ -21,6 +21,7 @@ class CreateSuratMasuksTable extends Migration
             $table->string("file");
             $table->string("jenis_surat", 30);
             $table->string("pengirim_surat", 30);
+            $table->date('tanggal_surat');
             $table->timestamps();
         });
     }
