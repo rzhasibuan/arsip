@@ -58,20 +58,13 @@
                 </ul>
             </li>
             {{--laporan--}}
-            <li class="{{$subFakultas   ?? ""}} {{$subProdi   ?? ""}} {{$subJalurMasuk   ?? ""}}  {{$subGelombang   ?? ""}} {{$subBiayaPendaftaran   ?? ""}} treeview">
-                <a href=""><i class="fa fa-print"></i> <span>Report</span>
-                    <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>
+            <li class="treeview">
+                <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    <i class="fa fa-sign-out"></i> <span>Logout</span>
                 </a>
-                <ul class="treeview-menu">
-                    <li class="nav-item {{$subFakultas   ?? ""}}">
-                        <a href="" class="nav-link"><i class="fa fa-dashboard"></i><span>Report Surat masuk</span></a>
-                    </li>
-                    <li class="nav-item {{$subFakultas   ?? ""}}">
-                        <a href="" class="nav-link"><i class="fa fa-dashboard"></i><span>Report Surat Keluar</span></a>
-                    </li>
-                </ul>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
             </li>
             @endrole
         </ul>

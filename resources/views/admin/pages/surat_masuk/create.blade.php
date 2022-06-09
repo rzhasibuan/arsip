@@ -33,7 +33,6 @@
                     <select name="asal_surat" id="asal_surat" class="form-control @error('asal_surat') is-invalid @enderror">
                         <option value="dinas">Dinas</option>
                         <option value="sekolah">Sekolah</option>
-                        <option value="lainnya">Lainnya</option>
                     </select>
 
                     @error('asal_surat')
